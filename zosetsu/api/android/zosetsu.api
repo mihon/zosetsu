@@ -1,0 +1,190 @@
+public final class zosetsu/models/Chapter {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set;Ljava/lang/String;Lzosetsu/models/Chapter$LockStatus;Lkotlin/time/Instant;Ljava/util/Map;Ljava/util/Map;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set;Ljava/lang/String;Lzosetsu/models/Chapter$LockStatus;Lkotlin/time/Instant;Ljava/util/Map;Ljava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getExtras ()Ljava/util/Map;
+	public final fun getKey ()Ljava/lang/String;
+	public final fun getLanguage ()Ljava/lang/String;
+	public final fun getLockStatus ()Lzosetsu/models/Chapter$LockStatus;
+	public final fun getMemo ()Ljava/util/Map;
+	public final fun getName ()Ljava/lang/String;
+	public final fun getNumber ()Ljava/lang/String;
+	public final fun getStaff ()Ljava/util/Set;
+	public final fun getType ()Ljava/lang/String;
+	public final fun getUploadedAt ()Lkotlin/time/Instant;
+	public final fun getVolume ()Ljava/lang/String;
+}
+
+public final class zosetsu/models/Chapter$LockStatus : java/lang/Enum {
+	public static final field LOCKED Lzosetsu/models/Chapter$LockStatus;
+	public static final field NONE Lzosetsu/models/Chapter$LockStatus;
+	public static final field UNLOCKED Lzosetsu/models/Chapter$LockStatus;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public final fun isLocked ()Z
+	public static fun valueOf (Ljava/lang/String;)Lzosetsu/models/Chapter$LockStatus;
+	public static fun values ()[Lzosetsu/models/Chapter$LockStatus;
+}
+
+public final class zosetsu/models/Manga {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set;Ljava/util/Set;Lzosetsu/models/Manga$Status;Lzosetsu/models/Manga$ContentRating;Ljava/lang/Float;Ljava/lang/String;Ljava/util/Set;Lzosetsu/models/Manga$ReadingMode;Lzosetsu/models/Manga$UpdateStrategy;ZLjava/util/Map;Ljava/util/Map;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set;Ljava/util/Set;Lzosetsu/models/Manga$Status;Lzosetsu/models/Manga$ContentRating;Ljava/lang/Float;Ljava/lang/String;Ljava/util/Set;Lzosetsu/models/Manga$ReadingMode;Lzosetsu/models/Manga$UpdateStrategy;ZLjava/util/Map;Ljava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getAltTitles ()Ljava/util/Set;
+	public final fun getBannerKey ()Ljava/lang/String;
+	public final fun getContentRating ()Lzosetsu/models/Manga$ContentRating;
+	public final fun getCoverKey ()Ljava/lang/String;
+	public final fun getDescription ()Ljava/lang/String;
+	public final fun getExtras ()Ljava/util/Map;
+	public final fun getInitialized ()Z
+	public final fun getKey ()Ljava/lang/String;
+	public final fun getMemo ()Ljava/util/Map;
+	public final fun getReadingMode ()Lzosetsu/models/Manga$ReadingMode;
+	public final fun getStaff ()Ljava/util/Set;
+	public final fun getStatus ()Lzosetsu/models/Manga$Status;
+	public final fun getTags ()Ljava/util/Set;
+	public final fun getTitle ()Ljava/lang/String;
+	public final fun getUpdateStrategy ()Lzosetsu/models/Manga$UpdateStrategy;
+	public final fun getUserRating ()Ljava/lang/Float;
+}
+
+public final class zosetsu/models/Manga$ContentRating : java/lang/Enum {
+	public static final field ADULT Lzosetsu/models/Manga$ContentRating;
+	public static final field SAFE Lzosetsu/models/Manga$ContentRating;
+	public static final field SUGGESTIVE Lzosetsu/models/Manga$ContentRating;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lzosetsu/models/Manga$ContentRating;
+	public static fun values ()[Lzosetsu/models/Manga$ContentRating;
+}
+
+public final class zosetsu/models/Manga$ReadingMode : java/lang/Enum {
+	public static final field LeftToRight Lzosetsu/models/Manga$ReadingMode;
+	public static final field LongStrip Lzosetsu/models/Manga$ReadingMode;
+	public static final field RightToLeft Lzosetsu/models/Manga$ReadingMode;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lzosetsu/models/Manga$ReadingMode;
+	public static fun values ()[Lzosetsu/models/Manga$ReadingMode;
+}
+
+public final class zosetsu/models/Manga$Status : java/lang/Enum {
+	public static final field Cancelled Lzosetsu/models/Manga$Status;
+	public static final field Completed Lzosetsu/models/Manga$Status;
+	public static final field Licensed Lzosetsu/models/Manga$Status;
+	public static final field OnHiatus Lzosetsu/models/Manga$Status;
+	public static final field Ongoing Lzosetsu/models/Manga$Status;
+	public static final field PublishingFinished Lzosetsu/models/Manga$Status;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lzosetsu/models/Manga$Status;
+	public static fun values ()[Lzosetsu/models/Manga$Status;
+}
+
+public final class zosetsu/models/Manga$Tag {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lzosetsu/models/Manga$Tag;
+	public static synthetic fun copy$default (Lzosetsu/models/Manga$Tag;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lzosetsu/models/Manga$Tag;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getDisplayName ()Ljava/lang/String;
+	public final fun getKey ()Ljava/lang/String;
+	public final fun getType ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class zosetsu/models/Manga$UpdateStrategy : java/lang/Enum {
+	public static final field AlwaysUpdate Lzosetsu/models/Manga$UpdateStrategy;
+	public static final field OnlyFetchOnce Lzosetsu/models/Manga$UpdateStrategy;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lzosetsu/models/Manga$UpdateStrategy;
+	public static fun values ()[Lzosetsu/models/Manga$UpdateStrategy;
+}
+
+public final class zosetsu/models/Page {
+	public fun <init> (Lzosetsu/models/Page$Content;Ljava/lang/String;)V
+	public synthetic fun <init> (Lzosetsu/models/Page$Content;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getContent ()Lzosetsu/models/Page$Content;
+	public final fun getThumbnail ()Ljava/lang/String;
+}
+
+public abstract interface class zosetsu/models/Page$Content {
+}
+
+public final class zosetsu/models/Page$DeferredContent : zosetsu/models/Page$Content {
+	public fun <init> ()V
+	public fun <init> (Ljava/util/Map;)V
+	public synthetic fun <init> (Ljava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/util/Map;
+	public final fun copy (Ljava/util/Map;)Lzosetsu/models/Page$DeferredContent;
+	public static synthetic fun copy$default (Lzosetsu/models/Page$DeferredContent;Ljava/util/Map;ILjava/lang/Object;)Lzosetsu/models/Page$DeferredContent;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getExtras ()Ljava/util/Map;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class zosetsu/models/Page$DisplayableContent : zosetsu/models/Page$Content {
+}
+
+public final class zosetsu/models/Page$ImageContent : zosetsu/models/Page$DisplayableContent {
+	public fun <init> (Ljava/lang/String;)V
+	public fun <init> (Ljava/util/List;)V
+	public final fun component1 ()Ljava/util/List;
+	public final fun copy (Ljava/util/List;)Lzosetsu/models/Page$ImageContent;
+	public static synthetic fun copy$default (Lzosetsu/models/Page$ImageContent;Ljava/util/List;ILjava/lang/Object;)Lzosetsu/models/Page$ImageContent;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getUrls ()Ljava/util/List;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class zosetsu/models/Page$TextContent : zosetsu/models/Page$DisplayableContent {
+	public fun <init> (Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;)Lzosetsu/models/Page$TextContent;
+	public static synthetic fun copy$default (Lzosetsu/models/Page$TextContent;Ljava/lang/String;ILjava/lang/Object;)Lzosetsu/models/Page$TextContent;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getText ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class zosetsu/models/Staff {
+	public abstract fun getKey ()Ljava/lang/String;
+	public abstract fun getName ()Ljava/lang/String;
+}
+
+public final class zosetsu/models/Staff$Artist : zosetsu/models/Staff$Manga {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public fun getKey ()Ljava/lang/String;
+	public fun getName ()Ljava/lang/String;
+}
+
+public final class zosetsu/models/Staff$Author : zosetsu/models/Staff$Manga {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public fun getKey ()Ljava/lang/String;
+	public fun getName ()Ljava/lang/String;
+}
+
+public abstract interface class zosetsu/models/Staff$Chapter : zosetsu/models/Staff {
+}
+
+public final class zosetsu/models/Staff$Circle : zosetsu/models/Staff$Manga {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public fun getKey ()Ljava/lang/String;
+	public fun getName ()Ljava/lang/String;
+}
+
+public abstract interface class zosetsu/models/Staff$Manga : zosetsu/models/Staff {
+}
+
+public final class zosetsu/models/Staff$Translator : zosetsu/models/Staff$Chapter {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public fun getKey ()Ljava/lang/String;
+	public fun getName ()Ljava/lang/String;
+}
+
+public final class zosetsu/models/Staff$Uploader : zosetsu/models/Staff$Chapter {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public fun getKey ()Ljava/lang/String;
+	public fun getName ()Ljava/lang/String;
+}
+

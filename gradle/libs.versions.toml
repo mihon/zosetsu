@@ -1,0 +1,29 @@
+[versions]
+android-gradle = "8.11.1"
+androidx-annotation = "1.9.1"
+kotlin = "2.2.0"
+kotlinx-serialization = "1.9.0"
+ktlint = "1.6.0"
+maven-publish = "0.33.0"
+spotless = "7.1.0"
+
+[libraries]
+androidx-annotation = { module = "androidx.annotation:annotation", version.ref = "androidx-annotation" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+
+android-gradle = { module = "com.android.tools.build:gradle", version.ref = "android-gradle" }
+kotlin-multiplatform-gradle = { module = "org.jetbrains.kotlin.multiplatform:org.jetbrains.kotlin.multiplatform.gradle.plugin", version.ref = "kotlin" }
+maven-publish-gradle = { module = "com.vanniktech.maven.publish:com.vanniktech.maven.publish.gradle.plugin", version.ref = "maven-publish" }
+spotless-gradle = { module = "com.diffplug.spotless:spotless-plugin-gradle", version.ref = "spotless" }
+
+# Used in [/gradle/build-config/build.gradle.kts, /gradle/build-config/src/main/kotlin/PluginSpotless.kt]
+ktlint-cli = { module = "com.pinterest.ktlint:ktlint-cli", version.ref = "ktlint" }
+
+[plugins]
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
+
+# Used in [/gradle/build-config/src/main/kotlin/PluginKotlinMultiplatform.kt]
+android-kotlinLibrary = { id = "com.android.kotlin.multiplatform.library", version.ref = "android-gradle" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+# Used in [/gradle/build-config/src/main/kotlin/PluginMavenPublish.kt]
+maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "maven-publish" }

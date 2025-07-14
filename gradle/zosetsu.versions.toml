@@ -1,0 +1,4 @@
+[plugins]
+kotlin-multiplatform = { id = "zosetsu.plugins.kotlin.multiplatform" }
+maven-publish = { id = "zosetsu.plugins.maven.publish" }
+spotless = { id = "zosetsu.plugins.spotless" }
