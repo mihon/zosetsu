@@ -36,6 +36,8 @@ kotlin {
     @Suppress("UnstableApiUsage")
     androidLibrary {
         namespace = "zosetsu"
+
+        withHostTest {}
     }
 
     sourceSets {
@@ -43,6 +45,12 @@ kotlin {
             dependencies {
                 implementation(libs.androidx.annotation)
                 implementation(libs.kotlinx.serialization.json)
+            }
+        }
+
+        commonTest {
+            dependencies {
+                implementation(libs.kotlin.test)
             }
         }
     }

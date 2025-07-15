@@ -30,6 +30,12 @@ jobs:
       - name: Check build
         run: ./gradlew publishToMavenLocal
 
+      - name: Run JVM tests
+        run: ./gradlew jvmTest
+
+      - name: Run Android tests
+        run: ./gradlew testAndroidHostTest
+
       - name: Check code format
         run: ./gradlew spotlessCheck
 

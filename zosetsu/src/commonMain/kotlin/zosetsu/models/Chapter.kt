@@ -48,7 +48,7 @@ public class Chapter(
         UNLOCKED(isLocked = false),
     }
 
-    private companion object {
-        private val numberRegex = "^(?:\\d+)+(?:\\.*\\d+)?[a-z]?$".toRegex()
+    internal companion object {
+        val numberRegex = """^(?:\d+)+(?:\.?\d+)?[a-z]?$""".toRegex()
     }
 }
