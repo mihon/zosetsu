@@ -5,7 +5,7 @@ kotlin = "2.2.0"
 kotlinx-serialization = "1.9.0"
 ktlint = "1.7.0"
 maven-publish = "0.34.0"
-spotless = "7.1.0"
+spotless = "7.2.1"
 
 [libraries]
 androidx-annotation = { module = "androidx.annotation:annotation", version.ref = "androidx-annotation" }
